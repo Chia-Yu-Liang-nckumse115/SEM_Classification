@@ -1,23 +1,37 @@
-10 類 SEM 微結構自動分類模型」
+#Overview
 
-只要給它一張新 SEM 圖：
+This project implements a 10-class SEM microstructure classification model.
+Given a new SEM image, the model outputs the probability distribution over the following categories:
 
-它會輸出這張圖分別屬於 Biological / Fibres / Films_Coated_Surface / MEMS_devices_and_electrodes / Nanowires / Particles / Patterned_surface / Porous_Sponge / Powder / Tips 的機率分布
+Biological
 
-你可以取 np.argmax 當「預測類別」
+Fibres
 
-在實務上的用途可以是：
+Films / Coated Surface
 
-快速整理大量 SEM 圖
+MEMS Devices and Electrodes
 
-幾千張 SEM 自動分成 10 類，不用助教或學生一張一張搬
+Nanowires
 
-材料表徵自動化
+Particles
 
-例如看到 Powder / Porous_Sponge / Nanowires 的比例
+Patterned Surface
 
-在不同製程條件下比較某類微結構的出現頻率
+Porous / Sponge
 
-品質管制初步篩選
+Powder
 
-例如 MEMS devices 的電極 SEM 有沒有出現特定 Patterned_surface 或 Powder 類缺陷
+Tips
+
+You may use np.argmax on the output probabilities to obtain the predicted class.
+
+#Parctical Applications
+
+1. Large-scale SEM Dataset Organization
+Automatically categorize thousands of SEM images into 10 microstructure classes — eliminating the need for manual sorting by students or assistants.
+
+2. Automated Materials Characterization
+Analyze the distribution of microstructure types (e.g., Powder, Porous/Sponge, Nanowires) under different processing conditions.
+
+3. Quality Assurance (QA) Pre-Screening
+Identify abnormal patterns in SEM images of MEMS devices, such as unexpected Patterned Surface features or Powder-like defects.
