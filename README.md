@@ -18,6 +18,6 @@
 
 在不同製程條件下比較某類微結構的出現頻率
 
-品質管制（QA）初步篩選
+品質管制初步篩選
 
 例如 MEMS devices 的電極 SEM 有沒有出現特定 Patterned_surface 或 Powder 類缺陷
